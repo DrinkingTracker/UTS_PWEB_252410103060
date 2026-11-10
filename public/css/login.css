@@ -1,0 +1,15 @@
+.Credential-panel{
+    
+}
+.LoginForm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.LoginForm-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 0;
+}
