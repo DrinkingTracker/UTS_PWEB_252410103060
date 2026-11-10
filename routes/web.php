@@ -7,4 +7,8 @@ use App\Http\Controllers\PageController;
 //     return view('welcome');
 // });
 
-Route::get('/', [PageController::class, 'login']);
+Route::get('/', [PageController::class, 'login'])->name('login');
+Route::post('/login', [PageController::class, 'logingateway'])->name('login.submit');
+Route::get('/dashboard/{username}', [PageController::class, 'dashboard'])->name('dashboard');
+Route::get('/profile/{username}', [PageController::class, 'profile'])->name('profile');
+Route::get('/pengelolaan/{username}', [PageController::class, 'pengelolaan'])->name('pengelolaan');

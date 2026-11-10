@@ -5,7 +5,8 @@
 @endpush
 
 @section('content')
-<form class="Credential-panel" method="GET" action="/dashboard">
+<form class="Credential-panel" method="POST" action="{{ route('login.submit') }}">
+    @csrf
     <div class="LoginForm-heading">
         <h1>Login</h1>
     </div>
@@ -17,9 +18,13 @@
         </label>
         <label class="LoginForm-field">
             <span>Password</span>
-            <input type="password"/>
+            <input type="password" name="password"/>
         </label>
     </div>
+
+    @if ($errors -> any())
+    <p class="LoginForm-error">{{ $errors -> first() }}</p>
+    @endif
 
     <div class="LoginForm-actions">
         <button class="LoginForm-button" type="submit">Login</button>

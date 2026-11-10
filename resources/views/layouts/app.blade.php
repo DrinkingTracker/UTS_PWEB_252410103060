@@ -12,9 +12,19 @@
 </head>
 <body>
 
-  <main>
-      @yield('content')
-  </main>
+  <div class="Shell">
+    @isset($username)
+      <x-sidebar :username="$username" />
+    @endisset
+
+    <div class="landingpage">
+      <main>
+        @yield('content')
+      </main>
+
+      @include('components.footer')
+    </div>
+  </div>
 
   @stack('scripts')
 </body>

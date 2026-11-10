@@ -87,3 +87,8 @@ main {
 .LoginForm-button:hover {
     background: #2cb07e;
 }
+.LoginForm-error {
+    margin: 15px 0 0;
+    color: #e53e3e;
+    font-size: 11px;
+}

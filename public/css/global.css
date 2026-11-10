@@ -10,3 +10,69 @@
     "GRAD" 0,
     "ROND" 0;
 }
+
+body {
+    margin: 0;
+    background: #f8faf9;
+    color: #1a202c;
+}
+
+.Shell {
+    display: flex;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    min-width: 0;
+}
+
+.Sidebar {
+    width: 260px;
+    flex: 0 0 260px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 28px 16px;
+    background: #fff;
+    border-right: 1px solid #e2e8f0;
+}
+
+.Sidebar-link {
+    display: flex;
+    align-items: center;
+    min-height: 46px;
+    padding: 0 12px;
+    border-radius: 10px;
+    color: #718096;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.Sidebar-link.is-active {
+    color: #28a375;
+    background: #e8f8f1;
+    font-weight: 700;
+}
+
+.landingpage {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    padding: 22px 5%;
+    border-top: 1px solid #e2e8f0;
+    color: #718096;
+    font-size: 16px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}

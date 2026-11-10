@@ -1,0 +1,31 @@
+main {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.main-namecard {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 100px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.main-namecard .left img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.main-namecard .right ul {
+    margin: 100;
+    padding: 100;
+    list-style: none;
+}
