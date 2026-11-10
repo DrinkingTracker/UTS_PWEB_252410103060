@@ -1,3 +1,5 @@
+FairPlay adalah website untuk melaporkan kecurangan pemain lain saat bermain game. FairPlay melindungi pemain legit dari pemain yang melakukan kecurangan. Memberi jaminan keamanan melalui sistem report.
+
 ## Halaman login
 ![alt text](image.png)
 ## Dashboard
