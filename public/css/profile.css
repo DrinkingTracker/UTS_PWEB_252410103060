@@ -1,7 +1,6 @@
 main {
     display: grid;
     place-items: center;
-    min-height: 100vh;
     padding: 20px;
 }
 
@@ -25,7 +24,7 @@ main {
 }
 
 .main-namecard .right ul {
-    margin: 100;
-    padding: 100;
+    margin: 10px;
+    padding: 10px;
     list-style: none;
 }

@@ -1,3 +1,3 @@
 <footer>
-    <p>FairPlay - Arrogant Player Report System</p>
+    <p>FairPlay - Cruel Player Report System</p>
 </footer>
