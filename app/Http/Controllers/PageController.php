@@ -19,7 +19,7 @@ class PageController extends Controller
         "password" => "required",
     ]);
 
-    $usernameSample = "Sample";
+    $usernameSample = "Yehezkiel Hansen Santoso";
     $passwordSample = "QAZWSX";
 
     if ($request->username !== $usernameSample || $request->password !== $passwordSample) {
@@ -60,7 +60,7 @@ class PageController extends Controller
     public function profile(string $username)
     {
         $Identity = [
-            "Yehezkiel Hansen Santoso",
+            $username,
             "252410103060"
         ]; 
 
