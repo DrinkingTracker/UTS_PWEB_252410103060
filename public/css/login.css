@@ -1,15 +1,89 @@
-.Credential-panel{
-    
+body {
+    margin: 0;
+    background: #f8faf9;
 }
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+.Credential-panel {
+    width: 100%;
+    max-width: 420px;
+    padding: 25px;
+    border-radius: 17px;
+    background: #fff;
+    box-shadow: 0 20px 60px rgba(26, 32, 44, 0.18);
+}
+
+.LoginForm-heading {
+    margin-bottom: 22px;
+}
+
+.LoginForm-heading h1 {
+    margin: 6px 0 5px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #1a202c;
+}
+
 .LoginForm-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
 }
 
 .LoginForm-field {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin: 0;
+}
+
+.LoginForm-field span {
+    color: #4a5568;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.LoginForm-field input {
+    width: 100%;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    outline: 0;
+    padding: 10px 11px;
+    color: #1a202c;
+    background: #fbfcfc;
+    font-size: 12px;
+}
+
+.LoginForm-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.LoginForm-button {
+    width: 100%;
+    min-height: 42px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 10px;
+    background: #33c08b;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 0 7px 16px rgba(51, 192, 139, 0.18);
+    cursor: pointer;
+}
+
+.LoginForm-button:hover {
+    background: #2cb07e;
 }
